@@ -9,7 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @SpringBootApplication
-@ImportResource("applicationContext.xml")
+@ImportResource({"classpath*:applicationContext.xml"})
 @Controller
 public class FrontApplication extends SpringBootServletInitializer{
     private String login;
