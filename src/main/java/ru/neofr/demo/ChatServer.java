@@ -1,12 +1,13 @@
 package ru.neofr.demo;
 
-import org.apache.cxf.headers.Header;
 import org.springframework.stereotype.Component;
-import ru.neofr.demo.entity.*;
+import ru.neofr.demo.entity.LoginReply;
+import ru.neofr.demo.entity.LoginRequest;
+import ru.neofr.demo.entity.MessageReply;
+import ru.neofr.demo.entity.PostMessage;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
-import java.util.List;
 
 @Component
 @Consumes(MediaType.APPLICATION_JSON)
